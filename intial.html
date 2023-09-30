@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Background Page</title>
+    <style>
+        /* Define the background image */
+        body {
+            /* background-image: url({{ url_for ('static', filename = 'intialbg1.jpg') }}); */
+            background-image: url('static/intialbg1.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh; 
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Style for the centered button */
+        .center-button {
+            background-color: #3498db; /* Button background color */
+            color: #fff; /* Button text color */
+            padding: 15px 30px; /* Button padding */
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+
+            /* Adjust the button's position */
+            position: absolute;
+            top: 85%; 
+            left: 24%; 
+            transform: translate(-50%, -50%);         }
+
+        /* Hover effect for the button */
+        .center-button:hover {
+            background-color: #fafbfc; /* New button background color on hover */
+            color: #3498db;
+        }
+    </style>
+</head>
+<body>
+    <button class="center-button" onclick="window.location.href = 'home.html'">Analyze
+    </button>
+</body>
+</html>
